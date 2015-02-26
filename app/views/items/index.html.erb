@@ -15,6 +15,8 @@
   </thead>
 
   <tbody>
+    <ul> id="item-list">
+      <%= render "quote_list" %>
     <% @items.each do |item| %>
       <tr>
         <td><%= image_tag item.image_url, class: "thumbnail" %></td>
@@ -28,6 +30,7 @@
       </tr>
     <% end %>
   </tbody>
+</ul>
 </table>
 
 <br>
